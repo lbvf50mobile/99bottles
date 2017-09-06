@@ -36,7 +36,14 @@ VERSE
             verse_positive(n)
         end
     end
+    def verses_arr(a,b)
+        if (a<b)
+            (a..b).to_a
+        else
+            (b..a).to_a.reverse
+        end
+    end
     def verses(a,b)
-        "#{verse(a)}\n#{verse(b)}"
+        verses_arr(a,b).map{|i| verse(i)}.join("\n")
     end
 end
