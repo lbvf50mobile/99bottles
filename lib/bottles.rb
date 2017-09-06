@@ -36,4 +36,7 @@ VERSE
             verse_positive(n)
         end
     end
+    def verses(a,b)
+        "#{verse(a)}\n#{verse(b)}"
+    end
 end
