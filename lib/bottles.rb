@@ -30,6 +30,10 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 VERSE
     end
     def verse(n)
-        verse_positive(n)
+        if(0==n)
+            verse_zero
+        else
+            verse_positive(n)
+        end
     end
 end
