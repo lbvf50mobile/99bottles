@@ -46,4 +46,7 @@ VERSE
     def verses(a,b)
         verses_arr(a,b).map{|i| verse(i)}.join("\n")
     end
+    def song
+        verses(99,0)
+    end
 end
