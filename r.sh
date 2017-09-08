@@ -1,0 +1,1 @@
+rubocop lib/bottles.rb
